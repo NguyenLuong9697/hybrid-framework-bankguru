@@ -1,4 +1,4 @@
-package payObjects;
+package payObjects.bankguru;
 
 public class RegisterPageObject {
 

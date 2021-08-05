@@ -1,4 +1,4 @@
-package payUIs;
+package payUIs.bankguru;
 
 public class LoginPageUI {
 
