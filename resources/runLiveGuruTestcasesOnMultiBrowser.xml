@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Live Guru">
+<parameter name="url" value="http://live.demoguru99.com/"/> 
+  <test name="Run on Firefox">
+	<parameter name="browser" value="Firefox"/>	
+    <classes>
+      <class name="com.liveguru.login.Level_04_Login_Multi_Browser"/>      
+    </classes>
+  </test> 
+  
+ <test name="Run on Chrome">
+	<parameter name="browser" value="Chrome"/>	
+    <classes>
+      <class name="com.liveguru.login.Level_04_Login_Multi_Browser"/>      
+    </classes>
+  </test> 
+ 
+<test name="Run on Edge Chromium">
+	<parameter name="browser" value="Edge"/>	
+    <classes>
+      <class name="com.liveguru.login.Level_04_Login_Multi_Browser"/>      
+    </classes>
+  </test> 
+</suite> 

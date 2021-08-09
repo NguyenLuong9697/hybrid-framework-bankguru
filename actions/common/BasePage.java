@@ -23,6 +23,7 @@ public class BasePage {
 	private Select select;
 	private JavascriptExecutor jsExecutor;
 	private Actions action;
+	//trong du an thuc te khai bao pham vi ham la protected
 	public static BasePage getBasePage() {
 		return new BasePage();
 	}
@@ -279,6 +280,20 @@ public class BasePage {
 		jsExecutor=(JavascriptExecutor)driver;
 		return (boolean) jsExecutor.executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0", getWebElement(driver,locator));
 		
+	}
+	public boolean isJQueryLoadSuccess(WebDriver driver) {
+		explicit=new WebDriverWait(driver,timeOut);
+		jsExecutor=(JavascriptExecutor)driver;
+		ExpectedCondition<Boolean> jQueryLoad= new ExpectedCondition<Boolean>() {
+
+			@Override
+			public Boolean apply(WebDriver driver) {
+				// TODO Auto-generated method stub
+				return (Boolean) jsExecutor.executeScript("return (window.jQuery!=null) && (jQuery.active===0);");
+			}
+			
+		};
+		return explicit.until(jQueryLoad);
 	}
 	public boolean isjQueryAndPageLoadSuccess(WebDriver driver) {
 		explicit=new WebDriverWait(driver,timeOut);
