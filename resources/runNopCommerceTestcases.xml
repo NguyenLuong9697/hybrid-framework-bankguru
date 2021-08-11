@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite parallel="false" name="Nop Commerce">
+<parameter name="url" value="https://demo.nopcommerce.com/"/> 
   <test name="Run on Firefox">
+  <parameter name="browser" value="Firefox"/>	
     <classes>
-      <class name="com.nopcommerce.login.Level_03_Register_Login_Page_Object_Pattern_01"/>
-      
+    <!-- <class name="com.nopcommerce.login.Level_03_Register_Login_Page_Object_Pattern_01"/>-->
+    <!-- <class name="com.nopcommerce.login.Level_04_Register_Login_Page_Multi_Browser"/> -->  
+     <class name="com.nopcommerce.login.Level_05_Register_Page_Factory"/>  
     </classes>
   </test> 
+ <!--
+ <test name="Run on Chrome">
+	<parameter name="browser" value="Chrome"/>	
+    <classes>
+      <class name="com.nopcommerce.login.Level_04_Register_Login_Page_Multi_Browser"/>      
+    </classes>
+  </test> 
+ 
+<test name="Run on Edge Chromium">
+	<parameter name="browser" value="Edge"/>	
+    <classes>
+      <class name="com.nopcommerce.login.Level_04_Register_Login_Page_Multi_Browser"/>      
+    </classes>
+  </test> 
+  -->
 </suite> 

@@ -1,5 +1,6 @@
 package common;
 
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -81,4 +82,9 @@ public class BaseTest {
 		return separator + folderName + separator;
 		
 	}
+	  public String randomEmail() {
+			Random rd=new Random();
+			return "automation_testing"+rd.nextInt(1000)+"@mail.vn";
+			
+		}
 }
