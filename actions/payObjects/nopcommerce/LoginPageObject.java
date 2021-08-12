@@ -28,13 +28,14 @@ public class LoginPageObject extends BasePage{
 		sendKeyToElement(driver, LoginPageUI.TEXTBOX_PASSWORD, passWord);
 	}
 
-	public void clickToLoginButton() {
+	public HomePageObject clickToLoginButton() {
 		// TODO Auto-generated method stub
 		// wait ccho Login Button co the click dc
 		waitForElementClickable(driver, LoginPageUI.BUTTON_LOGIN);
 		// click vao Login
 		clickToElement(driver, LoginPageUI.BUTTON_LOGIN);
-		
+		//return new HomePageObject(driver);
+		return PageGeneratorManager.getHomePageObject(driver);
 	}
 
 }

@@ -55,15 +55,16 @@ public class BaseTest {
 	}
 	
 	public WebDriver getBrowserDriver(String browserName, String urlValue) {
-		if(browserName.equalsIgnoreCase("Firefox")) {
+		BROWSER browser= BROWSER.valueOf(browserName.toUpperCase());
+		if(browser==BROWSER.FIREFOX) {
 			//System.setProperty("webdriver.gecko.driver", projectPath + getDirectorySlash("browserDrivers")+"geckodriver.exe");
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
-		}else if (browserName.equalsIgnoreCase("Chrome")) {
+		}else if (browser==BROWSER.CHROME) {
 			//System.setProperty("webdriver.chrome.driver",projectPath+ getDirectorySlash("browserDrivers") + "chromedriver.exe");
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();	
-		} else if (browserName.equalsIgnoreCase("Edge")) {
+		} else if (browser==BROWSER.EDGE) {
 			//System.setProperty("webdriver.edge.driver",projectPath+ getDirectorySlash("browserDrivers") + "msedgedriver.exe");
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();	

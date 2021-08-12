@@ -20,22 +20,25 @@ public class HomePageObject extends BasePage {
 		
 	}
 
-	public void clickToRegisterLink() {
+	public RegisterPageObject clickToRegisterLink() {
 		// TODO Auto-generated method stub
 		//wait cho RegisterLink dc clickable
 		waitForElementClickable(driver, HomePageUI.REGISTER_LINK);
 		//click vao Register Link
 		clickToElement(driver, HomePageUI.REGISTER_LINK);
-		
+		//return new RegisterPageObject(driver);
+		return PageGeneratorManager.getRegisterPageObject(driver);
 	}
 
-	public void clickToLoginLink() {
+	public LoginPageObject clickToLoginLink() {
 		// TODO Auto-generated method stub
 		
 		//wait cho Login Link dc clickable
 		waitForElementClickable(driver, HomePageUI.LOGIN_LINK);
 		//click vao Login Link
 		clickToElement(driver, HomePageUI.LOGIN_LINK);
+		//return new LoginPageObject(driver);
+		return PageGeneratorManager.getLoginPageObject(driver);
 	}
 
 }
