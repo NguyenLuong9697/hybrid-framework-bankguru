@@ -7,7 +7,9 @@
     <!-- <class name="com.nopcommerce.login.Level_03_Register_Login_Page_Object_Pattern_01"/>-->
     <!-- <class name="com.nopcommerce.login.Level_04_Register_Login_Page_Multi_Browser"/> -->  
     <!--<class name="com.nopcommerce.login.Level_05_Register_Page_Factory"/> -->
-     <class name="com.nopcommerce.login.Level_06_Register_Login_Page_Generator_Manager"/>   
+    <!-- <class name="com.nopcommerce.login.Level_06_Register_Login_Page_Generator_Manager"/> -->
+   	<!--   <class name="com.nopcommerce.login.Level_07_Switch_Page_Object"/>-->
+    <class name="com.nopcommerce.login.Level_08_Register_Login_Dynamic_Locator"/>
     </classes>
   </test> 
  <!-- 

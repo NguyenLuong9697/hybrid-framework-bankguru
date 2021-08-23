@@ -16,6 +16,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import payObjects.nopcommerce.MyAccountPageObject;
+import payObjects.nopcommerce.OrdersPageObject;
+import payObjects.nopcommerce.PageGeneratorManager;
+import payObjects.nopcommerce.SearchPageObject;
+import payUIs.nopcommerce.BasePageUI;
+
 public class BasePage {
 	private Alert alert;
 	private WebDriverWait explicit;
@@ -114,8 +120,14 @@ public class BasePage {
 	public List<WebElement> getListWebElements(WebDriver driver, String locator) {
 		return driver.findElements(getXPathLocator(locator));
 	}
+	public List<WebElement> getListWebElements(WebDriver driver, String locator, String...params) {
+		return driver.findElements(getXPathLocator(getDynamiLocator(locator, params)));
+	}
 	public int getElementSize(WebDriver driver, String locator) {
 		return getListWebElements(driver, locator).size();
+	}
+	public int getElementSize(WebDriver driver, String locator,String...params) {
+		return getListWebElements(driver, locator,params).size();
 	}
 	public void clickToElement(WebDriver driver, String locator) {
 		getWebElement(driver, locator).click();
@@ -124,11 +136,26 @@ public class BasePage {
 		getWebElement(driver, locator).clear();
 		getWebElement(driver, locator).sendKeys(value);
 	}
+	public void sendKeyToElement(WebDriver driver, String locator, String value,String...params) {
+		locator=getDynamiLocator(locator, params);
+		getWebElement(driver, locator).clear();
+		getWebElement(driver, locator).sendKeys(value);
+	}
 	public void selectItemInDefaultDropdownByText(WebDriver driver, String locator, String itemText) {
 		select=new Select(getWebElement(driver, locator));
 		select.selectByVisibleText(itemText);
 	}
+	public void selectItemInDefaultDropdownByText(WebDriver driver, String locator, String itemText, String... params) {
+		locator=getDynamiLocator(locator, params);
+		select=new Select(getWebElement(driver, locator));
+		select.selectByVisibleText(itemText);
+	}
 	public String getSelectedItemInDefaultDropdown(WebDriver driver, String locator) {
+		select=new Select(getWebElement(driver, locator));
+		return select.getFirstSelectedOption().getText();
+	}
+	public String getSelectedItemInDefaultDropdown(WebDriver driver, String locator, String... params) {
+		locator=getDynamiLocator(locator, params);
 		select=new Select(getWebElement(driver, locator));
 		return select.getFirstSelectedOption().getText();
 	}
@@ -172,6 +199,12 @@ public class BasePage {
 			clickToElement(driver, locator);
 		}
 	}
+	public void checkToDefaultCheckboxOrDefaultRadio(WebDriver driver , String locator,  String...params) {
+		if(!isElementSelected(driver, locator, params)) {
+			clickToElement(driver, locator, params);
+		}
+		
+	}
 	public void uncheckToDefaultCheckbox(WebDriver driver , String locator) {
 		
 		if(isElementSelected(driver, locator)) {
@@ -181,7 +214,15 @@ public class BasePage {
 	public boolean isElementDisplay(WebDriver driver, String locator) {
 		return getWebElement(driver, locator).isDisplayed();
 	}
+	public boolean isElementDisplay(WebDriver driver, String locator, String... params) {
+		locator=getDynamiLocator(locator, params);
+		return getWebElement(driver, locator).isDisplayed();
+	}
 	public boolean isElementSelected(WebDriver driver, String locator) {
+		return getWebElement(driver, locator).isSelected();
+	}
+	public boolean isElementSelected(WebDriver driver, String locator, String...params ) {
+		locator=getDynamiLocator(locator, params);
 		return getWebElement(driver, locator).isSelected();
 	}
 	public boolean isElementEnabled(WebDriver driver, String locator) {
@@ -214,6 +255,13 @@ public class BasePage {
 	public void pressKeyboardToElemntByActions(WebDriver driver, String locator, Keys key) {
 		action= new Actions(driver);
 		action.sendKeys(getWebElement(driver, locator), key).perform();
+	}
+	public void pressKeyboardToElemnt(WebDriver driver, String locator, Keys key) {
+		getWebElement(driver, locator).sendKeys(key);
+	}
+	public void pressKeyboardToElemnt(WebDriver driver, String locator, Keys key, String...params) {
+		locator = getDynamiLocator(locator, params);
+		getWebElement(driver, locator).sendKeys(key);
 	}
 	public Object executeForBrowser(WebDriver driver,String javaScript) {
 		jsExecutor=(JavascriptExecutor)driver;
@@ -328,6 +376,10 @@ public class BasePage {
 		explicit=new WebDriverWait(driver, timeOut);
 		explicit.until(ExpectedConditions.visibilityOfElementLocated(getXPathLocator(locator)));
 	}
+	public void waitForElementVisible(WebDriver driver, String locator, String...params) {
+		explicit=new WebDriverWait(driver, timeOut);
+		explicit.until(ExpectedConditions.visibilityOfElementLocated(getXPathLocator(getDynamiLocator(locator, params))));
+	}
 	public void waitForAllElementsVisible(WebDriver driver, String locator) {
 		explicit=new WebDriverWait(driver, timeOut);
 		explicit.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getXPathLocator(locator)));
@@ -345,5 +397,57 @@ public class BasePage {
 		explicit=new WebDriverWait(driver, timeOut);
 		explicit.until(ExpectedConditions.invisibilityOfAllElements(getListWebElements(driver, locator)));
 	}
+
+	public MyAccountPageObject openMyAccountPage(WebDriver driver) {
+		// TODO Auto-generated method stub
+		waitForElementClickable(driver, BasePageUI.MY_ACCOUNT_PAGE_FOOTER);
+		clickToElement(driver, BasePageUI.MY_ACCOUNT_PAGE_FOOTER);
+		return PageGeneratorManager.getMyAccountPageObject(driver);
+	}
+	
+	public SearchPageObject openSearchPage(WebDriver driver) {
+		// TODO Auto-generated method stub
+		waitForElementClickable(driver, BasePageUI.SEARCH_PAGE_FOOTER);
+		clickToElement(driver, BasePageUI.SEARCH_PAGE_FOOTER);
+		return PageGeneratorManager.getSearchPageObject(driver);
+	}
+	public OrdersPageObject openOrdersPage(WebDriver driver) {
+		// TODO Auto-generated method stub
+		waitForElementClickable(driver, BasePageUI.ORDERS_PAGE_FOOTER);
+		clickToElement(driver, BasePageUI.ORDERS_PAGE_FOOTER);
+		return PageGeneratorManager.getOrdersPageObject(driver);
+	}
+	public String getDynamiLocator(String locator, String... params) {
+		return String.format(locator,(Object[]) params);
+	}
+	public void waitForElementClickable(WebDriver driver, String locator, String... params) {
+		explicit=new WebDriverWait(driver, timeOut);
+		explicit.until(ExpectedConditions.elementToBeClickable(getXPathLocator(getDynamiLocator(locator, params))));
+
+	}
+	public void clickToElement(WebDriver driver, String locator, String... params) {
+		getWebElement(driver, getDynamiLocator(locator, params)).click();
+	}
+	
+	public BasePage openPageFooterByName(WebDriver driver, String pageName) {
+		waitForElementClickable(driver, BasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
+		clickToElement(driver, BasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
+		if(pageName.equals("Orders")) {
+			return PageGeneratorManager.getOrdersPageObject(driver);
+			
+		}else if(pageName.equals("My account")){
+			return PageGeneratorManager.getMyAccountPageObject(driver);
+		}else {
+			return PageGeneratorManager.getSearchPageObject(driver);
+		}
+		
+	}
+	public void getPageFooterByName(WebDriver driver, String pageName) {
+		waitForElementClickable(driver, BasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
+		clickToElement(driver, BasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
+		
+		
+	}
+	
 }
 	
