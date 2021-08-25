@@ -1,9 +1,9 @@
-package payObjects.nopcommerce;
+package payObjects.user.nopcommerce;
 
 import org.openqa.selenium.WebDriver;
 
 import common.BasePage;
-import payUIs.nopcommerce.RegisterPageUI;
+import payUIs.user.nopcommerce.RegisterPageUI;
 
 public class RegisterPageObject extends BasePage {
 	WebDriver driver;

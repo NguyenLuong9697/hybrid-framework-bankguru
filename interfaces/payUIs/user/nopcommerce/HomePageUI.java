@@ -1,4 +1,4 @@
-package payUIs.nopcommerce;
+package payUIs.user.nopcommerce;
 
 public class HomePageUI {
 	//static final: khai bao hang so trong java

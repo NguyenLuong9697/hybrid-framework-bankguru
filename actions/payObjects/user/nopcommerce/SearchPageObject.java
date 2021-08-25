@@ -1,4 +1,4 @@
-package payObjects.nopcommerce;
+package payObjects.user.nopcommerce;
 
 import org.openqa.selenium.WebDriver;
 

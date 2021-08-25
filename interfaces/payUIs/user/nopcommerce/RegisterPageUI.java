@@ -1,4 +1,4 @@
-package payUIs.nopcommerce;
+package payUIs.user.nopcommerce;
 
 public class RegisterPageUI {
 	public static final String RADIO_BUTTON_MALE="//input[@id='gender-male']";

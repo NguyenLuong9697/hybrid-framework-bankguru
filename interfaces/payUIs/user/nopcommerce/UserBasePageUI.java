@@ -1,6 +1,6 @@
-package payUIs.nopcommerce;
+package payUIs.user.nopcommerce;
 
-public class BasePageUI {
+public class UserBasePageUI {
 	public static final String ORDERS_PAGE_FOOTER="//div[@class='footer']//a[text()='Orders']";
 	public static final String SEARCH_PAGE_FOOTER="//div[@class='footer']//a[text()='Search']";
 	public static final String MY_ACCOUNT_PAGE_FOOTER="//div[@class='footer']//a[text()='My account']";

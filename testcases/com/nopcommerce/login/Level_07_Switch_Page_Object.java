@@ -8,13 +8,13 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import common.BaseTest;
-import payObjects.nopcommerce.HomePageObject;
-import payObjects.nopcommerce.LoginPageObject;
-import payObjects.nopcommerce.MyAccountPageObject;
-import payObjects.nopcommerce.OrdersPageObject;
-import payObjects.nopcommerce.PageGeneratorManager;
-import payObjects.nopcommerce.RegisterPageObject;
-import payObjects.nopcommerce.SearchPageObject;
+import payObjects.user.nopcommerce.HomePageObject;
+import payObjects.user.nopcommerce.LoginPageObject;
+import payObjects.user.nopcommerce.MyAccountPageObject;
+import payObjects.user.nopcommerce.OrdersPageObject;
+import payObjects.user.nopcommerce.PageGeneratorManager;
+import payObjects.user.nopcommerce.RegisterPageObject;
+import payObjects.user.nopcommerce.SearchPageObject;
 
 public class Level_07_Switch_Page_Object extends BaseTest {
   WebDriver driver;

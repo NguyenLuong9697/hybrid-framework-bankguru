@@ -1,9 +1,9 @@
-package payObjects.nopcommerce;
+package payObjects.user.nopcommerce;
 
 import org.openqa.selenium.WebDriver;
 
 import common.BasePage;
-import payUIs.nopcommerce.LoginPageUI;
+import payUIs.user.nopcommerce.LoginPageUI;
 
 public class LoginPageObject extends BasePage{
 	private WebDriver driver;

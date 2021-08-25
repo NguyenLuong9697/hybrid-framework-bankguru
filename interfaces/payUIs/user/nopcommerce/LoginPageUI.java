@@ -1,4 +1,4 @@
-package payUIs.nopcommerce;
+package payUIs.user.nopcommerce;
 
 public class LoginPageUI {
 	public static final String TEXTBOX_EMAIL="//input[@id='Email']";

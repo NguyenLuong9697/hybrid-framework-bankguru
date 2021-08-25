@@ -16,11 +16,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import payObjects.nopcommerce.MyAccountPageObject;
-import payObjects.nopcommerce.OrdersPageObject;
-import payObjects.nopcommerce.PageGeneratorManager;
-import payObjects.nopcommerce.SearchPageObject;
-import payUIs.nopcommerce.BasePageUI;
+import payObjects.admin.nopcommerce.ProductPageObject;
+import payObjects.user.nopcommerce.MyAccountPageObject;
+import payObjects.user.nopcommerce.OrdersPageObject;
+import payObjects.user.nopcommerce.PageGeneratorManager;
+import payObjects.user.nopcommerce.SearchPageObject;
+import payUIs.admin.nopcommerce.AdminBasePageUI;
+import payUIs.user.nopcommerce.UserBasePageUI;
 
 public class BasePage {
 	private Alert alert;
@@ -117,6 +119,10 @@ public class BasePage {
 	public WebElement getWebElement(WebDriver driver, String locator) {
 		return driver.findElement(getXPathLocator(locator));
 	}
+	public WebElement getWebElement(WebDriver driver, String locator, String...params) {
+		locator=getDynamiLocator(locator, params);
+		return driver.findElement(getXPathLocator(locator));
+	}
 	public List<WebElement> getListWebElements(WebDriver driver, String locator) {
 		return driver.findElements(getXPathLocator(locator));
 	}
@@ -181,6 +187,10 @@ public class BasePage {
 		}
 	}
 	public String getAttributeElement(WebDriver driver, String locator, String attributeName) {
+		return getWebElement(driver, locator).getAttribute(attributeName);
+	}
+	public String getAttributeElement(WebDriver driver, String locator, String attributeName, String...params ) {
+		locator=getDynamiLocator(locator, params);
 		return getWebElement(driver, locator).getAttribute(attributeName);
 	}
 	public String getTextElement(WebDriver driver, String locator) {
@@ -303,6 +313,11 @@ public class BasePage {
 		jsExecutor=(JavascriptExecutor)driver;
 		jsExecutor.executeScript("arguments[0].click();", getWebElement(driver, locator));
 	}
+	public void clickToElementByJS(WebDriver driver,String locator, String...params) {
+		locator= getDynamiLocator(locator, params);
+		jsExecutor=(JavascriptExecutor)driver;
+		jsExecutor.executeScript("arguments[0].click();", getWebElement(driver, locator));
+	}
 
 	public void scrollToElement(WebDriver driver,String locator) {
 		jsExecutor=(JavascriptExecutor)driver;
@@ -338,6 +353,7 @@ public class BasePage {
 			public Boolean apply(WebDriver driver) {
 				// TODO Auto-generated method stub
 				return (Boolean) jsExecutor.executeScript("return (window.jQuery!=null) && (jQuery.active===0);");
+				
 			}
 			
 		};
@@ -384,6 +400,11 @@ public class BasePage {
 		explicit=new WebDriverWait(driver, timeOut);
 		explicit.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getXPathLocator(locator)));
 	}
+	public void waitForAllElementsVisible(WebDriver driver, String locator, String...params) {
+		explicit=new WebDriverWait(driver, timeOut);
+		locator=getDynamiLocator(locator, params);
+		explicit.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getXPathLocator(locator)));
+	}
 	public void waitForElementInvisible(WebDriver driver, String locator) {
 		explicit=new WebDriverWait(driver, timeOut);
 		explicit.until(ExpectedConditions.invisibilityOfElementLocated(getXPathLocator(locator)));
@@ -391,30 +412,35 @@ public class BasePage {
 	public void waitForElementClickable(WebDriver driver, String locator) {
 		explicit=new WebDriverWait(driver, timeOut);
 		explicit.until(ExpectedConditions.elementToBeClickable(getXPathLocator(locator)));
+		
+	}
+	public void waitForElementClickable(WebDriver driver, WebElement element) {
+		explicit=new WebDriverWait(driver, timeOut);
+		explicit.until(ExpectedConditions.elementToBeClickable(element));
 	
 	}
 	public void waitForAllElementsInvisible(WebDriver driver, String locator) {
 		explicit=new WebDriverWait(driver, timeOut);
 		explicit.until(ExpectedConditions.invisibilityOfAllElements(getListWebElements(driver, locator)));
 	}
-
+	//User-NopCommerce
 	public MyAccountPageObject openMyAccountPage(WebDriver driver) {
 		// TODO Auto-generated method stub
-		waitForElementClickable(driver, BasePageUI.MY_ACCOUNT_PAGE_FOOTER);
-		clickToElement(driver, BasePageUI.MY_ACCOUNT_PAGE_FOOTER);
+		waitForElementClickable(driver, UserBasePageUI.MY_ACCOUNT_PAGE_FOOTER);
+		clickToElement(driver, UserBasePageUI.MY_ACCOUNT_PAGE_FOOTER);
 		return PageGeneratorManager.getMyAccountPageObject(driver);
 	}
 	
 	public SearchPageObject openSearchPage(WebDriver driver) {
 		// TODO Auto-generated method stub
-		waitForElementClickable(driver, BasePageUI.SEARCH_PAGE_FOOTER);
-		clickToElement(driver, BasePageUI.SEARCH_PAGE_FOOTER);
+		waitForElementClickable(driver, UserBasePageUI.SEARCH_PAGE_FOOTER);
+		clickToElement(driver, UserBasePageUI.SEARCH_PAGE_FOOTER);
 		return PageGeneratorManager.getSearchPageObject(driver);
 	}
 	public OrdersPageObject openOrdersPage(WebDriver driver) {
 		// TODO Auto-generated method stub
-		waitForElementClickable(driver, BasePageUI.ORDERS_PAGE_FOOTER);
-		clickToElement(driver, BasePageUI.ORDERS_PAGE_FOOTER);
+		waitForElementClickable(driver, UserBasePageUI.ORDERS_PAGE_FOOTER);
+		clickToElement(driver, UserBasePageUI.ORDERS_PAGE_FOOTER);
 		return PageGeneratorManager.getOrdersPageObject(driver);
 	}
 	public String getDynamiLocator(String locator, String... params) {
@@ -430,8 +456,8 @@ public class BasePage {
 	}
 	
 	public BasePage openPageFooterByName(WebDriver driver, String pageName) {
-		waitForElementClickable(driver, BasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
-		clickToElement(driver, BasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
+		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
+		clickToElement(driver, UserBasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
 		if(pageName.equals("Orders")) {
 			return PageGeneratorManager.getOrdersPageObject(driver);
 			
@@ -443,11 +469,21 @@ public class BasePage {
 		
 	}
 	public void getPageFooterByName(WebDriver driver, String pageName) {
-		waitForElementClickable(driver, BasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
-		clickToElement(driver, BasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
+		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
+		clickToElement(driver, UserBasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
 		
 		
 	}
+	//Admin-NopCommerce
+	public void openSubMenuByName(WebDriver driver,String menuPageName, String submenuPageName) {
+		waitForElementClickable(driver,AdminBasePageUI.MENU_LINK_BY_NAME, menuPageName);
+		//clickToElementByJS(driver, AdminBasePageUI.MENU_LINK_BY_NAME, menuPageName);
+		clickToElement(driver,AdminBasePageUI.MENU_LINK_BY_NAME, menuPageName);
+		waitForElementClickable(driver,AdminBasePageUI.SUB_MENU_LINK_BY_NAME, submenuPageName);
+		clickToElement(driver,AdminBasePageUI.SUB_MENU_LINK_BY_NAME, submenuPageName);
+		//clickToElementByJS(driver, AdminBasePageUI.SUB_MENU_LINK_BY_NAME, submenuPageName);
+	}
+	
 	
 }
 	
