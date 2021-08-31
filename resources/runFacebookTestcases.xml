@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Admin- Nop Commerce">
+<parameter name="url" value="https://www.facebook.com/r.php"/> 
+  
+ <test name="Run on Firefox">
+	<parameter name="browser" value="Firefox"/>	
+    <classes>
+      <class name="com.facebook.register.Level_11_Check_Element_Undisplay"/>     
+    </classes>
+  </test> 
+ 
+</suite> 
