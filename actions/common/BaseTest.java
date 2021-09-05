@@ -23,7 +23,7 @@ public class BaseTest {
 		CHROME, FIREFOX, EDGE;
 	}
 	protected BaseTest() {
-		log=LogFactory.getLog(MethodListener.class);
+		log=LogFactory.getLog(getClass());
 	}
 	
 	//bo tro cho cac class trong package test case

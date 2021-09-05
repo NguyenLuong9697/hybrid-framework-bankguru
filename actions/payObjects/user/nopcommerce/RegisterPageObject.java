@@ -87,6 +87,9 @@ public class RegisterPageObject extends BasePage {
 		//click Logout
 		clickToElement(driver, RegisterPageUI.LOGOUT_LINK);
 		//return new HomePageObject(driver);
+		if(driver.toString().contains("chrome")|| driver.toString().contains("edge")) {
+			sleepInSecond(3);
+		}
 		return PageGeneratorManager.getHomePageObject(driver);
 	}
 
