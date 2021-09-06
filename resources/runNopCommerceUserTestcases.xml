@@ -2,9 +2,11 @@
 <suite parallel="false" name="User-Nop Commerce">
 	<parameter name="url" value="https://demo.nopcommerce.com/"/> 
 	<listeners>
+		 
 	        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
 	        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
 	        <listener class-name="common.MethodListener"/>
+	        <listener class-name="reportConfig.ExtentReportListenerV2"/>
 	</listeners>
   	<test name="Run on Firefox">
   		<parameter name="browser" value="Firefox"/>	

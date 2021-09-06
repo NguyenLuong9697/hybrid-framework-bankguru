@@ -1,23 +1,23 @@
-[INFO ] [2021-09-05 22:14:52,121] Preconditon: Open browser Firefox and navigate to https://demo.nopcommerce.com/
-[INFO ] [2021-09-05 22:15:01,067] User_01_Register_To_System- Step 01: Verify Home Page is displayed
-[INFO ] [2021-09-05 22:15:01,348]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-09-05 22:15:01,351] User_01_Register_To_System- Step 02:Click to Register Link
-[INFO ] [2021-09-05 22:15:02,851] User_01_Register_To_System- Step 03: Click to Male Radio Button
-[INFO ] [2021-09-05 22:15:03,190] User_01_Register_To_System- Step 04: Enter to First Name textbox: Automation
-[INFO ] [2021-09-05 22:15:03,320] User_01_Register_To_System- Step 05: Enter to Last Name textbox: Testing
-[INFO ] [2021-09-05 22:15:03,430] User_01_Register_To_System- Step 06: Enter to Email textbox:automation_testing154@mail.vn
-[INFO ] [2021-09-05 22:15:03,556] User_01_Register_To_System- Step 07: Enter to Password textbox:123123
-[INFO ] [2021-09-05 22:15:03,646] User_01_Register_To_System- Step 08:Enter to Confirm Password textbox: 123123
-[INFO ] [2021-09-05 22:15:03,750] User_01_Register_To_System- Step 09: Cli to Register button
-[INFO ] [2021-09-05 22:15:05,852] User_01_Register_To_System- Step 10: Verify register message success is displayed
-[INFO ] [2021-09-05 22:15:05,954]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-09-05 22:15:05,955] User_01_Register_To_System- Step 11: Click to Logout Link
-[INFO ] [2021-09-05 22:15:07,598] User_01_Register_To_System- Step 12: Verify Home Page is displayed
-[INFO ] [2021-09-05 22:15:07,722]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-09-05 22:15:07,728] User_02_Login_To_System- Step 01: Click to Login link
-[INFO ] [2021-09-05 22:15:08,982] User_02_Login_To_System- Step 02: Enter to Email textbox with value:automation_testing154@mail.vn
-[INFO ] [2021-09-05 22:15:09,137] User_02_Login_To_System- Step 03: Enter to Password textbox:123123
-[INFO ] [2021-09-05 22:15:09,232] User_01_Register_To_System- Step 04: Click to Login Button
-[INFO ] [2021-09-05 22:15:10,903] User_01_Register_To_System- Step 05: Verify Home Page is displayed
-[INFO ] [2021-09-05 22:15:11,017]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-09-05 22:15:11,019] Postcondition: Close the browser
+[INFO ] [2021-09-06 21:14:01,163] Preconditon: Open browser Firefox and navigate to https://demo.nopcommerce.com/
+[INFO ] [2021-09-06 21:14:09,290] User_01_Register_To_System- Step 01: Verify Home Page is displayed
+[INFO ] [2021-09-06 21:14:09,461]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-09-06 21:14:09,464] User_01_Register_To_System- Step 02:Click to Register Link
+[INFO ] [2021-09-06 21:14:11,126] User_01_Register_To_System- Step 03: Click to Male Radio Button
+[INFO ] [2021-09-06 21:14:11,455] User_01_Register_To_System- Step 04: Enter to First Name textbox: Automation
+[INFO ] [2021-09-06 21:14:11,630] User_01_Register_To_System- Step 05: Enter to Last Name textbox: Testing
+[INFO ] [2021-09-06 21:14:11,731] User_01_Register_To_System- Step 06: Enter to Email textbox:automation_testing320@mail.vn
+[INFO ] [2021-09-06 21:14:11,853] User_01_Register_To_System- Step 07: Enter to Password textbox:123123
+[INFO ] [2021-09-06 21:14:11,938] User_01_Register_To_System- Step 08:Enter to Confirm Password textbox: 123123
+[INFO ] [2021-09-06 21:14:12,033] User_01_Register_To_System- Step 09: Cli to Register button
+[INFO ] [2021-09-06 21:14:14,343] User_01_Register_To_System- Step 10: Verify register message success is displayed
+[INFO ] [2021-09-06 21:14:14,438]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-09-06 21:14:14,438] User_01_Register_To_System- Step 11: Click to Logout Link
+[INFO ] [2021-09-06 21:14:16,770] User_01_Register_To_System- Step 12: Verify Home Page is displayed
+[INFO ] [2021-09-06 21:14:16,928]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-06 21:14:16,937] User_02_Login_To_System- Step 01: Click to Login link
+[INFO ] [2021-09-06 21:14:17,530] User_02_Login_To_System- Step 02: Enter to Email textbox with value:automation_testing320@mail.vn
+[INFO ] [2021-09-06 21:14:17,652] User_02_Login_To_System- Step 03: Enter to Password textbox:123123
+[INFO ] [2021-09-06 21:14:17,738] User_01_Register_To_System- Step 04: Click to Login Button
+[INFO ] [2021-09-06 21:14:19,577] User_01_Register_To_System- Step 05: Verify Home Page is displayed
+[INFO ] [2021-09-06 21:14:19,674]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-06 21:14:19,676] Postcondition: Close the browser

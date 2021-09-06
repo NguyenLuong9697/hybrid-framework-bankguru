@@ -29,6 +29,7 @@ public class Level_13_Register_Login_Logging extends BaseTest {
   @BeforeClass
   @Parameters({ "browser", "url" })
   public void beforeClass(String browserName,String urlValue) {
+	  	
 	  	log.info("Preconditon: Open browser "+browserName+ " and navigate to "+urlValue);
 	  	driver= getBrowserDriver(browserName, urlValue);
 		password="123123";
@@ -40,8 +41,9 @@ public class Level_13_Register_Login_Logging extends BaseTest {
   @Test
   public void User_01_Register_To_System() {
 	  log.info("User_01_Register_To_System- Step 01: Verify Home Page is displayed");
-	  homePageObject=PageGeneratorManager.getHomePageObject(driver);	 
-	  verifyTrue(homePageObject.isHomeSliderDisplayed());
+	  homePageObject=PageGeneratorManager.getHomePageObject(driver);
+	  //Fail lan 1
+	  verifyFalse(homePageObject.isHomeSliderDisplayed());
 	
 	  log.info("User_01_Register_To_System- Step 02:Click to Register Link");
 	  registerPageObject= homePageObject.clickToRegisterLink();
@@ -67,8 +69,9 @@ public class Level_13_Register_Login_Logging extends BaseTest {
 	  log.info("User_01_Register_To_System- Step 09: Cli to Register button");
 	  registerPageObject.clickToRegisterButton();
 	 
+	  //Fail lan 2
 	  log.info("User_01_Register_To_System- Step 10: Verify register message success is displayed");
-	  verifyTrue(registerPageObject.isRegisterMessageSuccessDisplay());
+	  verifyFalse(registerPageObject.isRegisterMessageSuccessDisplay());
 	 
 	  log.info("User_01_Register_To_System- Step 11: Click to Logout Link");
 	  homePageObject=registerPageObject.clickToLogoutLink();
