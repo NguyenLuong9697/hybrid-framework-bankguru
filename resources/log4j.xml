@@ -46,6 +46,15 @@
 		<appender-ref ref="file" />
 		<appender-ref ref="reportng" />
 	</category>
+	
+	 
+	<category name="reportConfig">
+		<priority value="all" />
+		<appender-ref ref="console" />
+		<appender-ref ref="logfile" />
+		<appender-ref ref="file" />
+		<appender-ref ref="reportng" />
+	</category>
 
 
 	<root>
@@ -53,3 +62,4 @@
 	</root>
 
 </log4j:configuration>
+

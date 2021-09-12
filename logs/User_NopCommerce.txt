@@ -1,23 +1,7 @@
-[INFO ] [2021-09-06 21:14:01,163] Preconditon: Open browser Firefox and navigate to https://demo.nopcommerce.com/
-[INFO ] [2021-09-06 21:14:09,290] User_01_Register_To_System- Step 01: Verify Home Page is displayed
-[INFO ] [2021-09-06 21:14:09,461]  -------------------------- FAILED -------------------------- 
-[INFO ] [2021-09-06 21:14:09,464] User_01_Register_To_System- Step 02:Click to Register Link
-[INFO ] [2021-09-06 21:14:11,126] User_01_Register_To_System- Step 03: Click to Male Radio Button
-[INFO ] [2021-09-06 21:14:11,455] User_01_Register_To_System- Step 04: Enter to First Name textbox: Automation
-[INFO ] [2021-09-06 21:14:11,630] User_01_Register_To_System- Step 05: Enter to Last Name textbox: Testing
-[INFO ] [2021-09-06 21:14:11,731] User_01_Register_To_System- Step 06: Enter to Email textbox:automation_testing320@mail.vn
-[INFO ] [2021-09-06 21:14:11,853] User_01_Register_To_System- Step 07: Enter to Password textbox:123123
-[INFO ] [2021-09-06 21:14:11,938] User_01_Register_To_System- Step 08:Enter to Confirm Password textbox: 123123
-[INFO ] [2021-09-06 21:14:12,033] User_01_Register_To_System- Step 09: Cli to Register button
-[INFO ] [2021-09-06 21:14:14,343] User_01_Register_To_System- Step 10: Verify register message success is displayed
-[INFO ] [2021-09-06 21:14:14,438]  -------------------------- FAILED -------------------------- 
-[INFO ] [2021-09-06 21:14:14,438] User_01_Register_To_System- Step 11: Click to Logout Link
-[INFO ] [2021-09-06 21:14:16,770] User_01_Register_To_System- Step 12: Verify Home Page is displayed
-[INFO ] [2021-09-06 21:14:16,928]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-09-06 21:14:16,937] User_02_Login_To_System- Step 01: Click to Login link
-[INFO ] [2021-09-06 21:14:17,530] User_02_Login_To_System- Step 02: Enter to Email textbox with value:automation_testing320@mail.vn
-[INFO ] [2021-09-06 21:14:17,652] User_02_Login_To_System- Step 03: Enter to Password textbox:123123
-[INFO ] [2021-09-06 21:14:17,738] User_01_Register_To_System- Step 04: Click to Login Button
-[INFO ] [2021-09-06 21:14:19,577] User_01_Register_To_System- Step 05: Verify Home Page is displayed
-[INFO ] [2021-09-06 21:14:19,674]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-09-06 21:14:19,676] Postcondition: Close the browser
+[INFO ] [2021-09-12 21:06:15,871] ---------- START delete file in folder ----------
+[INFO ] [2021-09-12 21:06:15,872] FAIL_12_09_2021_08_55_50.png
+[INFO ] [2021-09-12 21:06:15,873] ---------- END delete file in folder ----------
+[INFO ] [2021-09-12 21:06:24,643]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-09-12 21:06:29,646]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-09-12 21:06:31,535]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-12 21:06:34,113]  -------------------------- PASSED -------------------------- 

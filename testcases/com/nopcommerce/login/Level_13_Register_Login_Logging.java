@@ -47,7 +47,7 @@ public class Level_13_Register_Login_Logging extends BaseTest {
 	
 	  log.info("User_01_Register_To_System- Step 02:Click to Register Link");
 	  registerPageObject= homePageObject.clickToRegisterLink();
-	
+		
 	  log.info("User_01_Register_To_System- Step 03: Click to Male Radio Button");
 	  registerPageObject.clickToMaleRadioButton();
 	 
@@ -66,13 +66,13 @@ public class Level_13_Register_Login_Logging extends BaseTest {
 	  log.info("User_01_Register_To_System- Step 08:Enter to Confirm Password textbox: "+ password);
 	  registerPageObject.enterToConfirmPassWord(password);
 	 
-	  log.info("User_01_Register_To_System- Step 09: Cli to Register button");
+	  log.info("User_01_Register_To_System- Step 09: Click to Register button");
 	  registerPageObject.clickToRegisterButton();
 	 
 	  //Fail lan 2
 	  log.info("User_01_Register_To_System- Step 10: Verify register message success is displayed");
-	  verifyFalse(registerPageObject.isRegisterMessageSuccessDisplay());
-	 
+	 // verifyFalse(registerPageObject.isRegisterMessageSuccessDisplay());
+	  verifyEquals(registerPageObject.getSuccessMessage(),"Your registration completed.");
 	  log.info("User_01_Register_To_System- Step 11: Click to Logout Link");
 	  homePageObject=registerPageObject.clickToLogoutLink();
 	

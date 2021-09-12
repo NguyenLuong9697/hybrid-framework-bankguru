@@ -93,4 +93,11 @@ public class RegisterPageObject extends BasePage {
 		return PageGeneratorManager.getHomePageObject(driver);
 	}
 
+	public String getSuccessMessage() {
+		// TODO Auto-generated method stub
+		waitForElementVisible(driver, RegisterPageUI.MESSAGE_REGISTER);
+		return getTextElement(driver, RegisterPageUI.MESSAGE_REGISTER);
+		//return false;
+	}
+
 }

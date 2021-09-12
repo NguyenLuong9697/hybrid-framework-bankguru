@@ -2,11 +2,16 @@
 <suite parallel="false" name="User-Nop Commerce">
 	<parameter name="url" value="https://demo.nopcommerce.com/"/> 
 	<listeners>
-		 
-	        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-	        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-	        <listener class-name="common.MethodListener"/>
-	        <listener class-name="reportConfig.ExtentReportListenerV2"/>
+			<listener class-name="common.MethodListener"/>	 
+		 	<!-- Report NG -->
+		 	<!--  
+		 	<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+	        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>	              
+	        <listener class-name="reportConfig.ReportNGListener"/>
+	        -->
+	        <!-- Extent Report -->
+	        <!-- <listener class-name="reportConfig.ExtentReportListenerV2"/> --> 
+	        <listener class-name="reportConfig.ExtentTestListener"/>
 	</listeners>
   	<test name="Run on Firefox">
   		<parameter name="browser" value="Firefox"/>	
@@ -17,7 +22,7 @@
 		    <!-- <class name="com.nopcommerce.login.Level_06_Register_Login_Page_Generator_Manager"/> -->
 		   	<!--   <class name="com.nopcommerce.login.Level_07_Switch_Page_Object"/>-->
 		    <!--  <class name="com.nopcommerce.login.Level_08_Register_Login_Dynamic_Locator"/>-->
-		    <class name="com.nopcommerce.login.Level_13_Register_Login_Logging"/>
+		    <class name="com.nopcommerce.login.Level_13_Register_Login_ExtentReport"/>
     	</classes>
   	</test> 
   	
