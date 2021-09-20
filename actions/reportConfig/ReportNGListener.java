@@ -5,9 +5,11 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.NoSuchSessionException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -38,16 +40,27 @@ public class ReportNGListener extends BaseTest implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		log.info("---------- " + result.getName() + " FAILED test ----------");
-		System.setProperty("org.uncommons.reportng.escape-output", "false");
+		try {
+			log.info("---------- " + result.getName() + " FAILED test ----------");
+			System.setProperty("org.uncommons.reportng.escape-output", "false");
 
-		Object testClass = result.getInstance();
-		WebDriver webDriver = ((BaseTest) testClass).getDriver();
+			Object testClass = result.getInstance();
+			WebDriver webDriver = ((BaseTest) testClass).getDriver();
 
-		String screenshotPath = captureScreenshot(webDriver, result.getName());
-		Reporter.getCurrentTestResult();
-		Reporter.log("<br><a target=\"_blank\" href=\"file:///" + screenshotPath + "\">" + "<img src=\"file:///" + screenshotPath + "\" " + "height='100' width='150'/> " + "</a></br>");
-		Reporter.setCurrentTestResult(null);
+			String screenshotPath = captureScreenshot(webDriver, result.getName());
+			Reporter.getCurrentTestResult();
+			Reporter.log("<br><a target=\"_blank\" href=\"file:///" + screenshotPath + "\">" + "<img src=\"file:///" + screenshotPath + "\" " + "height='100' width='150'/> " + "</a></br>");
+			Reporter.setCurrentTestResult(null);
+		} catch (NoSuchSessionException e) {
+			// TODO Auto-generated catch block
+			log.info("Fail export report: "+e.getMessage());
+			e.printStackTrace();
+		}
+		catch (WebDriverException e) {
+			// TODO Auto-generated catch block
+			log.info("Fail export report: "+e.getMessage());
+			e.printStackTrace();
+		}
 		
 	}
 

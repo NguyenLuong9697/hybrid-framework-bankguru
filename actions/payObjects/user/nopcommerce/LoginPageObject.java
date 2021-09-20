@@ -38,4 +38,12 @@ public class LoginPageObject extends BasePage{
 		return PageGeneratorManager.getHomePageObject(driver);
 	}
 
+	public HomePageObject openHomePage() {
+		// TODO Auto-generated method stub
+		waitForElementClickable(driver, LoginPageUI.HOME_PAGE_ICON);
+		clickToElement(driver, LoginPageUI.HOME_PAGE_ICON);
+		return PageGeneratorManager.getHomePageObject(driver);
+		
+	}
+
 }

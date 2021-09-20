@@ -19,6 +19,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 
 import com.relevantcodes.extentreports.LogStatus;
@@ -120,15 +121,15 @@ public class BaseTest {
 		try {
 			if (condition == true) {
 				log.info(" -------------------------- PASSED -------------------------- ");
-				ExtentTestManager.getTest().log(LogStatus.INFO, "-------------------------- PASSED -------------------------- ");
+				//ExtentTestManager.getTest().log(LogStatus.INFO, "-------------------------- PASSED -------------------------- ");
 			} else {
 				//log4j
 				log.info(" -------------------------- FAILED -------------------------- ");
 				attachScreenShotToReportNG();
 				//extent
-				ExtentTestManager.getTest().log(LogStatus.INFO, "-------------------------- FAILED -------------------------- ");
+				//ExtentTestManager.getTest().log(LogStatus.INFO, "-------------------------- FAILED -------------------------- ");
 				//tu them
-				attchScreenShotToExtentReport();
+				//attchScreenShotToExtentReport();
 				
 				//
 			}
@@ -161,13 +162,13 @@ public class BaseTest {
 		try {
 			if (condition == false) {
 				log.info(" -------------------------- PASSED -------------------------- ");
-				ExtentTestManager.getTest().log(LogStatus.INFO, "-------------------------- PASSED -------------------------- ");
+				//ExtentTestManager.getTest().log(LogStatus.INFO, "-------------------------- PASSED -------------------------- ");
 			} else {
 				log.info(" -------------------------- FAILED -------------------------- ");
 				attachScreenShotToReportNG();
-				ExtentTestManager.getTest().log(LogStatus.INFO, "-------------------------- FAILED -------------------------- ");
+				//ExtentTestManager.getTest().log(LogStatus.INFO, "-------------------------- FAILED -------------------------- ");
 				//tu them
-				attchScreenShotToExtentReport();
+				//attchScreenShotToExtentReport();
 				//tu them
 			}
 			Assert.assertFalse(condition);
@@ -192,14 +193,14 @@ public class BaseTest {
 		try {
 			Assert.assertEquals(actual, expected);
 			log.info(" -------------------------- PASSED -------------------------- ");
-			ExtentTestManager.getTest().log(LogStatus.INFO, "-------------------------- PASSED -------------------------- ");
+			//ExtentTestManager.getTest().log(LogStatus.INFO, "-------------------------- PASSED -------------------------- ");
 		} catch (Throwable e) {
 			pass = false;
 			log.info(" -------------------------- FAILED -------------------------- ");
-			//attachScreenShotToReport();
-			ExtentTestManager.getTest().log(LogStatus.INFO, "-------------------------- FAILED -------------------------- ");
+			attachScreenShotToReportNG();
+			//ExtentTestManager.getTest().log(LogStatus.INFO, "-------------------------- FAILED -------------------------- ");
 			//tu them
-			attchScreenShotToExtentReport();
+			//attchScreenShotToExtentReport();
 			
 			//
 			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
@@ -259,5 +260,67 @@ public class BaseTest {
 		}
 	}
 
+	
+	protected void cleanBrowserAndDriver() {
+		String cmd = "";
+		try {
+			String osName = System.getProperty("os.name").toLowerCase();
+			log.info("OS name = " + osName);
 
-}
+			String driverInstanceName = driver.toString().toLowerCase();
+			log.info("Driver instance name = " + osName);
+
+			if (driverInstanceName.contains("chrome")) {
+				if (osName.contains("window")) {
+					cmd = "taskkill /F /FI \"IMAGENAME eq chromedriver*\"";
+				} else {
+					cmd = "pkill chromedriver";
+				}
+			} else if (driverInstanceName.contains("internetexplorer")) {
+				if (osName.contains("window")) {
+					cmd = "taskkill /F /FI \"IMAGENAME eq IEDriverServer*\"";
+				}
+			} else if (driverInstanceName.contains("firefox")) {
+				if (osName.contains("windows")) {
+					cmd = "taskkill /F /FI \"IMAGENAME eq geckodriver*\"";
+				} else {
+					cmd = "pkill geckodriver";
+				}
+			} else if (driverInstanceName.contains("edge")) {
+				if (osName.contains("window")) {
+					cmd = "taskkill /F /FI \"IMAGENAME eq msedgedriver*\"";
+				} else {
+					cmd = "pkill msedgedriver";
+				}
+			} else if (driverInstanceName.contains("opera")) {
+				if (osName.contains("window")) {
+					cmd = "taskkill /F /FI \"IMAGENAME eq operadriver*\"";
+				} else {
+					cmd = "pkill operadriver";
+				}
+			} else if (driverInstanceName.contains("safari")) {
+				if (osName.contains("mac")) {
+					cmd = "pkill safaridriver";
+				}
+			}
+			//Browser
+			if (driver != null) {
+				driver.manage().deleteAllCookies();
+				driver.quit();
+			}
+		} catch (Exception e) {
+			log.info("Close browser and clean excutable driver:"+e.getMessage());
+		} finally {
+			try {
+				//Excutable driver
+				Process process = Runtime.getRuntime().exec(cmd);
+				process.waitFor();
+			} catch (IOException e) {
+				e.printStackTrace();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	}
+

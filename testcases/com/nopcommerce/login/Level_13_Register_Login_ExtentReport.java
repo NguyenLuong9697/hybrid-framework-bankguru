@@ -89,7 +89,7 @@ public class Level_13_Register_Login_ExtentReport extends BaseTest {
   }
   @Test
   public void User_02_Login_To_System(Method method) {
-	  ExtentTestManager.startTest(method.getName(), "User_01_Register_To_System");
+	  ExtentTestManager.startTest(method.getName(), "User_02_Login_To_System");
 	  ExtentTestManager.getTest().log(LogStatus.INFO,"User_02_Login_To_System- Step 01: Click to Login link");
 	  loginPageObject=homePageObject.clickToLoginLink();
 	 
@@ -99,10 +99,10 @@ public class Level_13_Register_Login_ExtentReport extends BaseTest {
 	  ExtentTestManager.getTest().log(LogStatus.INFO,"User_02_Login_To_System- Step 03: Enter to Password textbox:"+password);
 	  loginPageObject.enterToPassword(password);
 	 
-	  ExtentTestManager.getTest().log(LogStatus.INFO,"User_01_Register_To_System- Step 04: Click to Login Button");
+	  ExtentTestManager.getTest().log(LogStatus.INFO,"User_02_Login_To_System- Step 04: Click to Login Button");
 	  homePageObject=loginPageObject.clickToLoginButton();
 	 
-	  ExtentTestManager.getTest().log(LogStatus.INFO,"User_01_Register_To_System- Step 05: Verify Home Page is displayed");
+	  ExtentTestManager.getTest().log(LogStatus.INFO,"User_02_Login_To_System- Step 05: Verify Home Page is displayed");
 	  verifyTrue(homePageObject.isHomeSliderDisplayed());
 
 	  ExtentTestManager.endTest();

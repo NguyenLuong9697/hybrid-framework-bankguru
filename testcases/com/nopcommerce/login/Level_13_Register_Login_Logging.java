@@ -36,14 +36,13 @@ public class Level_13_Register_Login_Logging extends BaseTest {
 		
 		emailAddress=randomEmail();
 		
-		
   }
   @Test
   public void User_01_Register_To_System() {
 	  log.info("User_01_Register_To_System- Step 01: Verify Home Page is displayed");
 	  homePageObject=PageGeneratorManager.getHomePageObject(driver);
-	  //Fail lan 1
-	  verifyFalse(homePageObject.isHomeSliderDisplayed());
+	  
+	  verifyTrue(homePageObject.isHomeSliderDisplayed());
 	
 	  log.info("User_01_Register_To_System- Step 02:Click to Register Link");
 	  registerPageObject= homePageObject.clickToRegisterLink();
@@ -69,10 +68,10 @@ public class Level_13_Register_Login_Logging extends BaseTest {
 	  log.info("User_01_Register_To_System- Step 09: Click to Register button");
 	  registerPageObject.clickToRegisterButton();
 	 
-	  //Fail lan 2
+	  
 	  log.info("User_01_Register_To_System- Step 10: Verify register message success is displayed");
 	 // verifyFalse(registerPageObject.isRegisterMessageSuccessDisplay());
-	  verifyEquals(registerPageObject.getSuccessMessage(),"Your registration completed.");
+	  verifyEquals(registerPageObject.getSuccessMessage(),"Your registration completed");
 	  log.info("User_01_Register_To_System- Step 11: Click to Logout Link");
 	  homePageObject=registerPageObject.clickToLogoutLink();
 	
@@ -90,18 +89,19 @@ public class Level_13_Register_Login_Logging extends BaseTest {
 	  log.info("User_02_Login_To_System- Step 03: Enter to Password textbox:"+password);
 	  loginPageObject.enterToPassword(password);
 	 
-	  log.info("User_01_Register_To_System- Step 04: Click to Login Button");
+	  log.info("User_02_Login_To_System- Step 04: Click to Login Button");
 	  homePageObject=loginPageObject.clickToLoginButton();
 	 
-	  log.info("User_01_Register_To_System- Step 05: Verify Home Page is displayed");
+	  log.info("User_02_Login_To_System- Step 05: Verify Home Page is displayed");
 	  verifyTrue(homePageObject.isHomeSliderDisplayed());
 
   }
- 
-  @AfterClass
-  public void afterClass() {
-	  log.info("Postcondition: Close the browser");
-	  driver.quit();
+  @Parameters({ "browser"})
+  @AfterClass(alwaysRun = true)
+  public void afterClass(String browserName) {
+	  log.info("Postcondition: Close the browser:"+browserName);
+	
+	  cleanBrowserAndDriver();
   }
 
 }

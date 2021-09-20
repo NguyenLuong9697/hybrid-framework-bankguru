@@ -1,7 +1,11 @@
-[INFO ] [2021-09-12 21:06:15,871] ---------- START delete file in folder ----------
-[INFO ] [2021-09-12 21:06:15,872] FAIL_12_09_2021_08_55_50.png
-[INFO ] [2021-09-12 21:06:15,873] ---------- END delete file in folder ----------
-[INFO ] [2021-09-12 21:06:24,643]  -------------------------- FAILED -------------------------- 
-[INFO ] [2021-09-12 21:06:29,646]  -------------------------- FAILED -------------------------- 
-[INFO ] [2021-09-12 21:06:31,535]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-09-12 21:06:34,113]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 14:14:58,622] Preconditon-Step 01: Open browser Firefox and navigate to https://demo.nopcommerce.com/
+[INFO ] [2021-09-20 14:15:06,658] Precondition- Step 02: Verify Home Page is displayed
+[INFO ] [2021-09-20 14:15:06,774]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 14:15:06,788] User_01_Login_To_System - Step 01: Click to Login link
+[INFO ] [2021-09-20 14:15:09,266] User_01_Login_To_System - Step 02: Set login page cookie
+[INFO ] [2021-09-20 14:15:16,894] User_01_Login_To_System - Step 03: Open home page
+[INFO ] [2021-09-20 14:15:17,739] User_01_Register_To_System- Step 04: Verify Home Page is displayed
+[INFO ] [2021-09-20 14:15:17,840]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 14:15:17,847] Postcondition: Close the browser:Firefox
+[INFO ] [2021-09-20 14:15:17,847] OS name = windows 10
+[INFO ] [2021-09-20 14:15:17,847] Driver instance name = windows 10

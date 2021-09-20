@@ -28,3 +28,391 @@
 [INFO ] [2021-09-12 21:06:29,646]  -------------------------- FAILED -------------------------- 
 [INFO ] [2021-09-12 21:06:31,535]  -------------------------- PASSED -------------------------- 
 [INFO ] [2021-09-12 21:06:34,113]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 10:14:26,547] ---------- START delete file in folder ----------
+[INFO ] [2021-09-20 10:14:26,559] FAIL_12_09_2021_09_06_24.png
+[INFO ] [2021-09-20 10:14:26,560] ---------- END delete file in folder ----------
+[INFO ] [2021-09-20 10:14:26,577] Preconditon: Open browser Firefox and navigate to https://demo.nopcommerce.com/
+[INFO ] [2021-09-20 10:14:37,710] User_01_Register_To_System- Step 01: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:14:37,978]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-09-20 10:14:38,434] User_01_Register_To_System- Step 02:Click to Register Link
+[INFO ] [2021-09-20 10:14:39,932] User_01_Register_To_System- Step 03: Click to Male Radio Button
+[INFO ] [2021-09-20 10:14:40,267] User_01_Register_To_System- Step 04: Enter to First Name textbox: Automation
+[INFO ] [2021-09-20 10:14:40,410] User_01_Register_To_System- Step 05: Enter to Last Name textbox: Testing
+[INFO ] [2021-09-20 10:14:40,529] User_01_Register_To_System- Step 06: Enter to Email textbox:automation_testing243@mail.vn
+[INFO ] [2021-09-20 10:14:40,684] User_01_Register_To_System- Step 07: Enter to Password textbox:123123
+[INFO ] [2021-09-20 10:14:40,781] User_01_Register_To_System- Step 08:Enter to Confirm Password textbox: 123123
+[INFO ] [2021-09-20 10:14:40,871] User_01_Register_To_System- Step 09: Click to Register button
+[INFO ] [2021-09-20 10:14:42,471] User_01_Register_To_System- Step 10: Verify register message success is displayed
+[INFO ] [2021-09-20 10:14:42,564]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-09-20 10:14:42,633] User_01_Register_To_System- Step 11: Click to Logout Link
+[INFO ] [2021-09-20 10:14:44,306] User_01_Register_To_System- Step 12: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:14:44,425]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 10:14:44,432] ---------- User_01_Register_To_System FAILED test ----------
+[INFO ] [2021-09-20 10:14:44,643] User_02_Login_To_System- Step 01: Click to Login link
+[INFO ] [2021-09-20 10:14:46,079] User_02_Login_To_System- Step 02: Enter to Email textbox with value:automation_testing243@mail.vn
+[INFO ] [2021-09-20 10:14:46,232] User_02_Login_To_System- Step 03: Enter to Password textbox:123123
+[INFO ] [2021-09-20 10:14:46,348] User_01_Register_To_System- Step 04: Click to Login Button
+[INFO ] [2021-09-20 10:14:47,747] User_01_Register_To_System- Step 05: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:14:48,946] ---------- User_02_Login_To_System FAILED test ----------
+[INFO ] [2021-09-20 10:14:48,961] ---------- User_02_Login_To_System FAILED test ----------
+[INFO ] [2021-09-20 10:14:48,966] Postcondition: Close the browser:Firefox
+[INFO ] [2021-09-20 10:14:48,966] OS name = windows 10
+[INFO ] [2021-09-20 10:14:48,967] Driver instance name = windows 10
+[INFO ] [2021-09-20 10:14:48,972] Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'ADMIN', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210823123856, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 9792, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 220dd5d9-0af9-4e59-82f1-e254f33a500b
+[INFO ] [2021-09-20 10:14:49,136] OS name = windows 10
+[INFO ] [2021-09-20 10:14:49,136] Driver instance name = windows 10
+[INFO ] [2021-09-20 10:14:53,213] java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:16559
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'ADMIN', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
+[INFO ] [2021-09-20 10:16:32,722] ---------- START delete file in folder ----------
+[INFO ] [2021-09-20 10:16:32,726] FAIL_20_09_2021_10_14_37.png
+[INFO ] [2021-09-20 10:16:32,727] FAIL_20_09_2021_10_14_42.png
+[INFO ] [2021-09-20 10:16:32,727] User_01_Register_To_System_20_09_2021_10_14_44.png
+[INFO ] [2021-09-20 10:16:32,728] ---------- END delete file in folder ----------
+[INFO ] [2021-09-20 10:16:32,740] Preconditon: Open browser Firefox and navigate to https://demo.nopcommerce.com/
+[INFO ] [2021-09-20 10:16:43,682] User_01_Register_To_System- Step 01: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:16:43,963]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-09-20 10:16:44,838] User_01_Register_To_System- Step 02:Click to Register Link
+[INFO ] [2021-09-20 10:16:47,692] User_01_Register_To_System- Step 03: Click to Male Radio Button
+[INFO ] [2021-09-20 10:16:48,056] User_01_Register_To_System- Step 04: Enter to First Name textbox: Automation
+[INFO ] [2021-09-20 10:16:48,197] User_01_Register_To_System- Step 05: Enter to Last Name textbox: Testing
+[INFO ] [2021-09-20 10:16:48,298] User_01_Register_To_System- Step 06: Enter to Email textbox:automation_testing140@mail.vn
+[INFO ] [2021-09-20 10:16:48,423] User_01_Register_To_System- Step 07: Enter to Password textbox:123123
+[INFO ] [2021-09-20 10:16:48,533] User_01_Register_To_System- Step 08:Enter to Confirm Password textbox: 123123
+[INFO ] [2021-09-20 10:16:48,617] User_01_Register_To_System- Step 09: Click to Register button
+[INFO ] [2021-09-20 10:16:52,938] User_01_Register_To_System- Step 10: Verify register message success is displayed
+[INFO ] [2021-09-20 10:16:53,074]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-09-20 10:16:53,169] User_01_Register_To_System- Step 11: Click to Logout Link
+[INFO ] [2021-09-20 10:16:57,880] User_01_Register_To_System- Step 12: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:16:58,026]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 10:16:58,036] ---------- User_01_Register_To_System FAILED test ----------
+[INFO ] [2021-09-20 10:16:58,307] User_02_Login_To_System- Step 01: Click to Login link
+[INFO ] [2021-09-20 10:17:00,751] User_02_Login_To_System- Step 02: Enter to Email textbox with value:automation_testing140@mail.vn
+[INFO ] [2021-09-20 10:17:00,926] User_02_Login_To_System- Step 03: Enter to Password textbox:123123
+[INFO ] [2021-09-20 10:17:01,050] User_01_Register_To_System- Step 04: Click to Login Button
+[INFO ] [2021-09-20 10:17:01,516] User_01_Register_To_System- Step 05: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:17:02,662] ---------- User_02_Login_To_System FAILED test ----------
+[INFO ] [2021-09-20 10:17:02,681] ---------- User_02_Login_To_System FAILED test ----------
+[INFO ] [2021-09-20 10:17:02,691] Postcondition: Close the browser:Firefox
+[INFO ] [2021-09-20 10:17:02,691] OS name = windows 10
+[INFO ] [2021-09-20 10:17:02,692] Driver instance name = windows 10
+[INFO ] [2021-09-20 10:17:02,710] Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'ADMIN', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 91.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210823123856, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 13484, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1549d79d-5403-464e-ae2d-be8296fdc8a2
+[INFO ] [2021-09-20 10:17:02,854] OS name = windows 10
+[INFO ] [2021-09-20 10:17:02,854] Driver instance name = windows 10
+[INFO ] [2021-09-20 10:17:07,001] java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:29079
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'ADMIN', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
+[INFO ] [2021-09-20 10:17:41,320] ---------- START delete file in folder ----------
+[INFO ] [2021-09-20 10:17:41,322] FAIL_20_09_2021_10_16_43.png
+[INFO ] [2021-09-20 10:17:41,323] FAIL_20_09_2021_10_16_53.png
+[INFO ] [2021-09-20 10:17:41,323] User_01_Register_To_System_20_09_2021_10_16_58.png
+[INFO ] [2021-09-20 10:17:41,324] ---------- END delete file in folder ----------
+[INFO ] [2021-09-20 10:17:41,336] Preconditon: Open browser Firefox and navigate to https://demo.nopcommerce.com/
+[INFO ] [2021-09-20 10:17:52,797] User_01_Register_To_System- Step 01: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:17:53,075]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-09-20 10:17:53,861] User_01_Register_To_System- Step 02:Click to Register Link
+[INFO ] [2021-09-20 10:17:56,759] User_01_Register_To_System- Step 03: Click to Male Radio Button
+[INFO ] [2021-09-20 10:17:57,094] User_01_Register_To_System- Step 04: Enter to First Name textbox: Automation
+[INFO ] [2021-09-20 10:17:57,227] User_01_Register_To_System- Step 05: Enter to Last Name textbox: Testing
+[INFO ] [2021-09-20 10:17:57,335] User_01_Register_To_System- Step 06: Enter to Email textbox:automation_testing452@mail.vn
+[INFO ] [2021-09-20 10:17:57,461] User_01_Register_To_System- Step 07: Enter to Password textbox:123123
+[INFO ] [2021-09-20 10:17:57,561] User_01_Register_To_System- Step 08:Enter to Confirm Password textbox: 123123
+[INFO ] [2021-09-20 10:17:57,660] User_01_Register_To_System- Step 09: Click to Register button
+[INFO ] [2021-09-20 10:18:00,447] User_01_Register_To_System- Step 10: Verify register message success is displayed
+[INFO ] [2021-09-20 10:18:00,553]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-09-20 10:18:00,622] User_01_Register_To_System- Step 11: Click to Logout Link
+[INFO ] [2021-09-20 10:18:03,462] User_01_Register_To_System- Step 12: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:18:03,576]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 10:18:03,582] ---------- User_01_Register_To_System FAILED test ----------
+[INFO ] [2021-09-20 10:18:03,797] User_02_Login_To_System- Step 01: Click to Login link
+[INFO ] [2021-09-20 10:18:06,156] User_02_Login_To_System- Step 02: Enter to Email textbox with value:automation_testing452@mail.vn
+[INFO ] [2021-09-20 10:18:06,273] User_02_Login_To_System- Step 03: Enter to Password textbox:123123
+[INFO ] [2021-09-20 10:18:06,373] User_01_Register_To_System- Step 04: Click to Login Button
+[INFO ] [2021-09-20 10:18:09,513] User_01_Register_To_System- Step 05: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:18:09,634]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 10:18:09,637] Postcondition: Close the browser:Firefox
+[INFO ] [2021-09-20 10:18:09,637] OS name = windows 10
+[INFO ] [2021-09-20 10:18:09,639] Driver instance name = windows 10
+[INFO ] [2021-09-20 10:18:10,920] OS name = windows 10
+[INFO ] [2021-09-20 10:18:10,921] Driver instance name = windows 10
+[INFO ] [2021-09-20 10:18:11,060] Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'ADMIN', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
+[INFO ] [2021-09-20 10:21:08,992] ---------- START delete file in folder ----------
+[INFO ] [2021-09-20 10:21:08,994] FAIL_20_09_2021_10_17_53.png
+[INFO ] [2021-09-20 10:21:08,995] FAIL_20_09_2021_10_18_00.png
+[INFO ] [2021-09-20 10:21:08,996] User_01_Register_To_System_20_09_2021_10_18_03.png
+[INFO ] [2021-09-20 10:21:08,996] ---------- END delete file in folder ----------
+[INFO ] [2021-09-20 10:21:09,013] Preconditon: Open browser Firefox and navigate to https://demo.nopcommerce.com/
+[INFO ] [2021-09-20 10:21:18,067] User_01_Register_To_System- Step 01: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:21:18,251]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-09-20 10:21:18,541] User_01_Register_To_System- Step 02:Click to Register Link
+[INFO ] [2021-09-20 10:21:20,081] User_01_Register_To_System- Step 03: Click to Male Radio Button
+[INFO ] [2021-09-20 10:21:20,395] User_01_Register_To_System- Step 04: Enter to First Name textbox: Automation
+[INFO ] [2021-09-20 10:21:20,515] User_01_Register_To_System- Step 05: Enter to Last Name textbox: Testing
+[INFO ] [2021-09-20 10:21:20,601] User_01_Register_To_System- Step 06: Enter to Email textbox:automation_testing531@mail.vn
+[INFO ] [2021-09-20 10:21:20,709] User_01_Register_To_System- Step 07: Enter to Password textbox:123123
+[INFO ] [2021-09-20 10:21:20,805] User_01_Register_To_System- Step 08:Enter to Confirm Password textbox: 123123
+[INFO ] [2021-09-20 10:21:20,900] User_01_Register_To_System- Step 09: Click to Register button
+[INFO ] [2021-09-20 10:21:22,405] User_01_Register_To_System- Step 10: Verify register message success is displayed
+[INFO ] [2021-09-20 10:21:22,499]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-09-20 10:21:22,575] User_01_Register_To_System- Step 11: Click to Logout Link
+[INFO ] [2021-09-20 10:21:24,334] User_01_Register_To_System- Step 12: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:21:24,451]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 10:21:24,458] ---------- User_01_Register_To_System FAILED test ----------
+[INFO ] [2021-09-20 10:21:24,665] User_02_Login_To_System- Step 01: Click to Login link
+[INFO ] [2021-09-20 10:21:25,262] User_02_Login_To_System- Step 02: Enter to Email textbox with value:automation_testing531@mail.vn
+[INFO ] [2021-09-20 10:21:25,358] User_02_Login_To_System- Step 03: Enter to Password textbox:123123
+[INFO ] [2021-09-20 10:21:25,440] User_01_Register_To_System- Step 04: Click to Login Button
+[INFO ] [2021-09-20 10:21:27,701] User_01_Register_To_System- Step 05: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:21:27,802]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 10:21:27,804] Postcondition: Close the browser:Firefox
+[INFO ] [2021-09-20 10:21:27,805] OS name = windows 10
+[INFO ] [2021-09-20 10:21:27,805] Driver instance name = windows 10
+[INFO ] [2021-09-20 10:21:29,167] OS name = windows 10
+[INFO ] [2021-09-20 10:21:29,167] Driver instance name = windows 10
+[INFO ] [2021-09-20 10:21:29,174] Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'ADMIN', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
+[INFO ] [2021-09-20 10:26:02,630] ---------- START delete file in folder ----------
+[INFO ] [2021-09-20 10:26:02,632] FAIL_20_09_2021_10_21_18.png
+[INFO ] [2021-09-20 10:26:02,633] FAIL_20_09_2021_10_21_22.png
+[INFO ] [2021-09-20 10:26:02,634] User_01_Register_To_System_20_09_2021_10_21_24.png
+[INFO ] [2021-09-20 10:26:02,635] ---------- END delete file in folder ----------
+[INFO ] [2021-09-20 10:26:02,651] Preconditon: Open browser Firefox and navigate to https://demo.nopcommerce.com/
+[INFO ] [2021-09-20 10:26:06,819] Postcondition: Close the browser:Firefox
+[INFO ] [2021-09-20 10:26:06,819] OS name = windows 10
+[INFO ] [2021-09-20 10:26:06,831] Cannot invoke "Object.toString()" because "this.driver" is null
+[INFO ] [2021-09-20 10:26:48,143] ---------- START delete file in folder ----------
+[INFO ] [2021-09-20 10:26:48,278] ---------- END delete file in folder ----------
+[INFO ] [2021-09-20 10:26:48,309] Preconditon: Open browser Firefox and navigate to https://demo.nopcommerce.com/
+[INFO ] [2021-09-20 10:27:01,930] User_01_Register_To_System- Step 01: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:27:02,172]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-09-20 10:27:02,529] User_01_Register_To_System- Step 02:Click to Register Link
+[INFO ] [2021-09-20 10:27:07,836] User_01_Register_To_System- Step 03: Click to Male Radio Button
+[INFO ] [2021-09-20 10:27:08,153] User_01_Register_To_System- Step 04: Enter to First Name textbox: Automation
+[INFO ] [2021-09-20 10:27:08,275] User_01_Register_To_System- Step 05: Enter to Last Name textbox: Testing
+[INFO ] [2021-09-20 10:27:08,386] User_01_Register_To_System- Step 06: Enter to Email textbox:automation_testing194@mail.vn
+[INFO ] [2021-09-20 10:27:08,517] User_01_Register_To_System- Step 07: Enter to Password textbox:123123
+[INFO ] [2021-09-20 10:27:08,640] User_01_Register_To_System- Step 08:Enter to Confirm Password textbox: 123123
+[INFO ] [2021-09-20 10:27:08,772] User_01_Register_To_System- Step 09: Click to Register button
+[INFO ] [2021-09-20 10:27:13,079] User_01_Register_To_System- Step 10: Verify register message success is displayed
+[INFO ] [2021-09-20 10:27:13,187]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-09-20 10:27:13,274] User_01_Register_To_System- Step 11: Click to Logout Link
+[INFO ] [2021-09-20 10:27:17,990] User_01_Register_To_System- Step 12: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:27:18,122]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 10:27:18,130] ---------- User_01_Register_To_System FAILED test ----------
+[INFO ] [2021-09-20 10:27:18,405] User_02_Login_To_System- Step 01: Click to Login link
+[INFO ] [2021-09-20 10:27:19,229] User_02_Login_To_System- Step 02: Enter to Email textbox with value:automation_testing194@mail.vn
+[INFO ] [2021-09-20 10:27:19,369] User_02_Login_To_System- Step 03: Enter to Password textbox:123123
+[INFO ] [2021-09-20 10:27:19,471] User_01_Register_To_System- Step 04: Click to Login Button
+[INFO ] [2021-09-20 10:27:19,689] User_01_Register_To_System- Step 05: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:27:20,845] ---------- User_02_Login_To_System FAILED test ----------
+[INFO ] [2021-09-20 10:27:20,851] ---------- User_02_Login_To_System FAILED test ----------
+[INFO ] [2021-09-20 10:27:20,857] Postcondition: Close the browser:Firefox
+[INFO ] [2021-09-20 10:27:20,858] OS name = windows 10
+[INFO ] [2021-09-20 10:27:20,858] Driver instance name = windows 10
+[INFO ] [2021-09-20 10:27:20,863] Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'ADMIN', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 92.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210903235534, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 10912, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e27553ba-2a23-4be2-b0bf-033371ef1a61
+[INFO ] [2021-09-20 10:27:21,024] OS name = windows 10
+[INFO ] [2021-09-20 10:27:21,024] Driver instance name = windows 10
+[INFO ] [2021-09-20 10:27:25,177] java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:37644
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'ADMIN', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
+[INFO ] [2021-09-20 10:27:52,860] ---------- START delete file in folder ----------
+[INFO ] [2021-09-20 10:27:52,861] FAIL_20_09_2021_10_27_02.png
+[INFO ] [2021-09-20 10:27:52,862] FAIL_20_09_2021_10_27_13.png
+[INFO ] [2021-09-20 10:27:52,863] User_01_Register_To_System_20_09_2021_10_27_18.png
+[INFO ] [2021-09-20 10:27:52,863] ---------- END delete file in folder ----------
+[INFO ] [2021-09-20 10:27:52,881] Preconditon: Open browser Firefox and navigate to https://demo.nopcommerce.com/
+[INFO ] [2021-09-20 10:28:01,850] User_01_Register_To_System- Step 01: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:28:02,055]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-09-20 10:28:02,357] User_01_Register_To_System- Step 02:Click to Register Link
+[INFO ] [2021-09-20 10:28:03,864] User_01_Register_To_System- Step 03: Click to Male Radio Button
+[INFO ] [2021-09-20 10:28:04,216] User_01_Register_To_System- Step 04: Enter to First Name textbox: Automation
+[INFO ] [2021-09-20 10:28:04,373] User_01_Register_To_System- Step 05: Enter to Last Name textbox: Testing
+[INFO ] [2021-09-20 10:28:04,460] User_01_Register_To_System- Step 06: Enter to Email textbox:automation_testing236@mail.vn
+[INFO ] [2021-09-20 10:28:04,584] User_01_Register_To_System- Step 07: Enter to Password textbox:123123
+[INFO ] [2021-09-20 10:28:04,670] User_01_Register_To_System- Step 08:Enter to Confirm Password textbox: 123123
+[INFO ] [2021-09-20 10:28:04,763] User_01_Register_To_System- Step 09: Click to Register button
+[INFO ] [2021-09-20 10:28:06,334] User_01_Register_To_System- Step 10: Verify register message success is displayed
+[INFO ] [2021-09-20 10:28:06,419]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-09-20 10:28:06,501] User_01_Register_To_System- Step 11: Click to Logout Link
+[INFO ] [2021-09-20 10:28:08,875] User_01_Register_To_System- Step 12: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:28:09,007]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 10:28:09,013] ---------- User_01_Register_To_System FAILED test ----------
+[INFO ] [2021-09-20 10:28:09,275] User_02_Login_To_System- Step 01: Click to Login link
+[INFO ] [2021-09-20 10:28:09,864] User_02_Login_To_System- Step 02: Enter to Email textbox with value:automation_testing236@mail.vn
+[INFO ] [2021-09-20 10:28:10,011] User_02_Login_To_System- Step 03: Enter to Password textbox:123123
+[INFO ] [2021-09-20 10:28:10,117] User_01_Register_To_System- Step 04: Click to Login Button
+[INFO ] [2021-09-20 10:28:12,454] User_01_Register_To_System- Step 05: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:28:12,582]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 10:28:12,585] Postcondition: Close the browser:Firefox
+[INFO ] [2021-09-20 10:28:12,585] OS name = windows 10
+[INFO ] [2021-09-20 10:28:12,585] Driver instance name = windows 10
+[INFO ] [2021-09-20 10:28:13,872] OS name = windows 10
+[INFO ] [2021-09-20 10:28:13,872] Driver instance name = windows 10
+[INFO ] [2021-09-20 10:28:13,931] Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'ADMIN', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
+[INFO ] [2021-09-20 10:28:54,996] ---------- START delete file in folder ----------
+[INFO ] [2021-09-20 10:28:54,998] FAIL_20_09_2021_10_28_02.png
+[INFO ] [2021-09-20 10:28:54,998] FAIL_20_09_2021_10_28_06.png
+[INFO ] [2021-09-20 10:28:54,999] User_01_Register_To_System_20_09_2021_10_28_09.png
+[INFO ] [2021-09-20 10:28:55,000] ---------- END delete file in folder ----------
+[INFO ] [2021-09-20 10:28:55,014] Preconditon: Open browser Firefox and navigate to https://demo.nopcommerce.com/
+[INFO ] [2021-09-20 10:29:04,795] Postcondition: Close the browser:Firefox
+[INFO ] [2021-09-20 10:29:04,795] OS name = windows 10
+[INFO ] [2021-09-20 10:29:04,797] Driver instance name = windows 10
+[INFO ] [2021-09-20 10:30:53,698] ---------- START delete file in folder ----------
+[INFO ] [2021-09-20 10:30:53,700] ---------- END delete file in folder ----------
+[INFO ] [2021-09-20 10:30:53,719] Preconditon: Open browser Firefox and navigate to https://demo.nopcommerce.com/
+[INFO ] [2021-09-20 10:31:03,344] Postcondition: Close the browser:Firefox
+[INFO ] [2021-09-20 10:31:03,346] OS name = windows 10
+[INFO ] [2021-09-20 10:31:03,351] Driver instance name = windows 10
+[INFO ] [2021-09-20 10:34:14,448] ---------- START delete file in folder ----------
+[INFO ] [2021-09-20 10:34:14,450] ---------- END delete file in folder ----------
+[INFO ] [2021-09-20 10:34:14,469] Preconditon: Open browser Firefox and navigate to https://demo.nopcommerce.com/
+[INFO ] [2021-09-20 10:34:24,068] User_01_Register_To_System- Step 01: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:34:24,258]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 10:34:24,260] User_01_Register_To_System- Step 02:Click to Register Link
+[INFO ] [2021-09-20 10:34:27,091] User_01_Register_To_System- Step 03: Click to Male Radio Button
+[INFO ] [2021-09-20 10:34:27,439] User_01_Register_To_System- Step 04: Enter to First Name textbox: Automation
+[INFO ] [2021-09-20 10:34:27,574] User_01_Register_To_System- Step 05: Enter to Last Name textbox: Testing
+[INFO ] [2021-09-20 10:34:27,691] User_01_Register_To_System- Step 06: Enter to Email textbox:automation_testing380@mail.vn
+[INFO ] [2021-09-20 10:34:27,818] User_01_Register_To_System- Step 07: Enter to Password textbox:123123
+[INFO ] [2021-09-20 10:34:27,922] User_01_Register_To_System- Step 08:Enter to Confirm Password textbox: 123123
+[INFO ] [2021-09-20 10:34:28,035] User_01_Register_To_System- Step 09: Click to Register button
+[INFO ] [2021-09-20 10:34:32,317] User_01_Register_To_System- Step 10: Verify register message success is displayed
+[INFO ] [2021-09-20 10:34:32,419]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 10:34:32,419] User_01_Register_To_System- Step 11: Click to Logout Link
+[INFO ] [2021-09-20 10:34:35,339] User_01_Register_To_System- Step 12: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:34:35,450]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 10:34:35,462] User_02_Login_To_System- Step 01: Click to Login link
+[INFO ] [2021-09-20 10:34:37,776] User_02_Login_To_System- Step 02: Enter to Email textbox with value:automation_testing380@mail.vn
+[INFO ] [2021-09-20 10:34:38,914] ---------- User_02_Login_To_System FAILED test ----------
+[INFO ] [2021-09-20 10:34:38,921] ---------- User_02_Login_To_System FAILED test ----------
+[INFO ] [2021-09-20 10:34:38,929] Postcondition: Close the browser:Firefox
+[INFO ] [2021-09-20 10:34:38,929] OS name = windows 10
+[INFO ] [2021-09-20 10:34:38,930] Driver instance name = windows 10
+[INFO ] [2021-09-20 10:34:38,934] Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'ADMIN', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 92.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210903235534, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 8640, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5e0f16b2-bec1-4a27-b5bd-7b599a77988c
+[INFO ] [2021-09-20 10:51:33,024] ---------- START delete file in folder ----------
+[INFO ] [2021-09-20 10:51:33,027] ---------- END delete file in folder ----------
+[INFO ] [2021-09-20 10:51:33,041] Preconditon: Open browser Firefox and navigate to https://demo.nopcommerce.com/
+[INFO ] [2021-09-20 10:51:41,542] User_01_Register_To_System- Step 01: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:51:41,720]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 10:51:41,723] User_01_Register_To_System- Step 02:Click to Register Link
+[INFO ] [2021-09-20 10:51:43,340] User_01_Register_To_System- Step 03: Click to Male Radio Button
+[INFO ] [2021-09-20 10:51:43,673] User_01_Register_To_System- Step 04: Enter to First Name textbox: Automation
+[INFO ] [2021-09-20 10:51:43,794] User_01_Register_To_System- Step 05: Enter to Last Name textbox: Testing
+[INFO ] [2021-09-20 10:51:43,888] User_01_Register_To_System- Step 06: Enter to Email textbox:automation_testing509@mail.vn
+[INFO ] [2021-09-20 10:51:44,032] User_01_Register_To_System- Step 07: Enter to Password textbox:123123
+[INFO ] [2021-09-20 10:51:44,162] User_01_Register_To_System- Step 08:Enter to Confirm Password textbox: 123123
+[INFO ] [2021-09-20 10:51:44,301] User_01_Register_To_System- Step 09: Click to Register button
+[INFO ] [2021-09-20 10:51:46,505] User_01_Register_To_System- Step 10: Verify register message success is displayed
+[INFO ] [2021-09-20 10:51:46,595]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 10:51:46,595] User_01_Register_To_System- Step 11: Click to Logout Link
+[INFO ] [2021-09-20 10:51:48,429] User_01_Register_To_System- Step 12: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:51:48,555]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 10:51:48,562] User_02_Login_To_System- Step 01: Click to Login link
+[INFO ] [2021-09-20 10:51:49,872] User_02_Login_To_System- Step 02: Enter to Email textbox with value:automation_testing509@mail.vn
+[INFO ] [2021-09-20 10:51:50,031] User_02_Login_To_System- Step 03: Enter to Password textbox:123123
+[INFO ] [2021-09-20 10:51:50,168] User_01_Register_To_System- Step 04: Click to Login Button
+[INFO ] [2021-09-20 10:51:52,060] User_01_Register_To_System- Step 05: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:51:52,161]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 10:51:52,164] Postcondition: Close the browser:Firefox
+[INFO ] [2021-09-20 10:51:52,165] OS name = windows 10
+[INFO ] [2021-09-20 10:51:52,165] Driver instance name = windows 10
+[INFO ] [2021-09-20 10:52:09,885] ---------- START delete file in folder ----------
+[INFO ] [2021-09-20 10:52:09,888] ---------- END delete file in folder ----------
+[INFO ] [2021-09-20 10:52:09,909] Preconditon: Open browser Firefox and navigate to https://demo.nopcommerce.com/
+[INFO ] [2021-09-20 10:52:18,335] User_01_Register_To_System- Step 01: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:52:18,595]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 10:52:18,605] User_01_Register_To_System- Step 02:Click to Register Link
+[INFO ] [2021-09-20 10:52:20,203] User_01_Register_To_System- Step 03: Click to Male Radio Button
+[INFO ] [2021-09-20 10:52:20,603] User_01_Register_To_System- Step 04: Enter to First Name textbox: Automation
+[INFO ] [2021-09-20 10:52:20,729] User_01_Register_To_System- Step 05: Enter to Last Name textbox: Testing
+[INFO ] [2021-09-20 10:52:20,834] User_01_Register_To_System- Step 06: Enter to Email textbox:automation_testing398@mail.vn
+[INFO ] [2021-09-20 10:52:21,005] User_01_Register_To_System- Step 07: Enter to Password textbox:123123
+[INFO ] [2021-09-20 10:52:21,090] User_01_Register_To_System- Step 08:Enter to Confirm Password textbox: 123123
+[INFO ] [2021-09-20 10:52:21,195] User_01_Register_To_System- Step 09: Click to Register button
+[INFO ] [2021-09-20 10:52:22,121] User_01_Register_To_System- Step 10: Verify register message success is displayed
+[INFO ] [2021-09-20 10:52:22,206]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 10:52:22,207] User_01_Register_To_System- Step 11: Click to Logout Link
+[INFO ] [2021-09-20 10:52:24,525] User_01_Register_To_System- Step 12: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:52:24,630]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 10:52:24,637] User_02_Login_To_System- Step 01: Click to Login link
+[INFO ] [2021-09-20 10:52:25,231] User_02_Login_To_System- Step 02: Enter to Email textbox with value:automation_testing398@mail.vn
+[INFO ] [2021-09-20 10:52:25,402] User_02_Login_To_System- Step 03: Enter to Password textbox:123123
+[INFO ] [2021-09-20 10:52:25,526] User_01_Register_To_System- Step 04: Click to Login Button
+[INFO ] [2021-09-20 10:52:25,818] User_01_Register_To_System- Step 05: Verify Home Page is displayed
+[INFO ] [2021-09-20 10:52:26,854] ---------- User_02_Login_To_System FAILED test ----------
+[INFO ] [2021-09-20 10:52:26,861] Fail export report: Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'ADMIN', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 92.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210903235534, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 14120, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b360a17a-26f4-48da-b541-df0739fd8005
+[INFO ] [2021-09-20 10:52:26,864] Postcondition: Close the browser:Firefox
+[INFO ] [2021-09-20 10:52:26,864] OS name = windows 10
+[INFO ] [2021-09-20 10:52:26,864] Driver instance name = windows 10
+[INFO ] [2021-09-20 10:52:26,869] Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'ADMIN', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 92.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210903235534, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 14120, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b360a17a-26f4-48da-b541-df0739fd8005
+[INFO ] [2021-09-20 14:03:41,143] Preconditon-Step 01: Open browser Firefox and navigate to https://demo.nopcommerce.com/
+[INFO ] [2021-09-20 14:04:00,500] Precondition- Step 02: Verify Home Page is displayed
+[INFO ] [2021-09-20 14:04:00,644]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 14:04:00,657] User_01_Login_To_System - Step 01: Click to Login link
+[INFO ] [2021-09-20 14:04:03,310] User_01_Login_To_System - Step 02: Set login page cookie
+[INFO ] [2021-09-20 14:04:10,946] User_01_Login_To_System - Step 03: Open home page
+[INFO ] [2021-09-20 14:04:13,629] User_01_Register_To_System- Step 04: Verify Home Page is displayed
+[INFO ] [2021-09-20 14:04:13,746]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 14:04:13,812] Postcondition: Close the browser:Firefox
+[INFO ] [2021-09-20 14:12:28,180] Preconditon-Step 01: Open browser Firefox and navigate to https://demo.nopcommerce.com/
+[INFO ] [2021-09-20 14:12:36,378] Precondition- Step 02: Verify Home Page is displayed
+[INFO ] [2021-09-20 14:12:36,487]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 14:12:36,501] User_01_Login_To_System - Step 01: Click to Login link
+[INFO ] [2021-09-20 14:12:38,989] User_01_Login_To_System - Step 02: Set login page cookie
+[INFO ] [2021-09-20 14:12:46,620] User_01_Login_To_System - Step 03: Open home page
+[INFO ] [2021-09-20 14:12:49,295] User_01_Register_To_System- Step 04: Verify Home Page is displayed
+[INFO ] [2021-09-20 14:12:49,416]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 14:12:49,421] Postcondition: Close the browser:Firefox
+[INFO ] [2021-09-20 14:14:58,622] Preconditon-Step 01: Open browser Firefox and navigate to https://demo.nopcommerce.com/
+[INFO ] [2021-09-20 14:15:06,658] Precondition- Step 02: Verify Home Page is displayed
+[INFO ] [2021-09-20 14:15:06,774]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 14:15:06,788] User_01_Login_To_System - Step 01: Click to Login link
+[INFO ] [2021-09-20 14:15:09,266] User_01_Login_To_System - Step 02: Set login page cookie
+[INFO ] [2021-09-20 14:15:16,894] User_01_Login_To_System - Step 03: Open home page
+[INFO ] [2021-09-20 14:15:17,739] User_01_Register_To_System- Step 04: Verify Home Page is displayed
+[INFO ] [2021-09-20 14:15:17,840]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-09-20 14:15:17,847] Postcondition: Close the browser:Firefox
+[INFO ] [2021-09-20 14:15:17,847] OS name = windows 10
+[INFO ] [2021-09-20 14:15:17,847] Driver instance name = windows 10

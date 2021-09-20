@@ -3,44 +3,23 @@
 	<parameter name="url" value="https://demo.nopcommerce.com/"/> 
 	<listeners>
 			<listener class-name="common.MethodListener"/>	 
-		 	<!-- Report NG -->
-		 	<!--  
+		 	
 		 	<listener class-name="org.uncommons.reportng.HTMLReporter"/>
 	        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>	              
 	        <listener class-name="reportConfig.ReportNGListener"/>
-	        -->
+	        
 	        <!-- Extent Report -->
 	        <!-- <listener class-name="reportConfig.ExtentReportListenerV2"/> --> 
-	        <listener class-name="reportConfig.ExtentTestListener"/>
+	       	<!--  <listener class-name="reportConfig.ExtentTestListener"/> -->
 	</listeners>
   	<test name="Run on Firefox">
   		<parameter name="browser" value="Firefox"/>	
     	<classes>
-		    <!-- <class name="com.nopcommerce.login.Level_03_Register_Login_Page_Object_Pattern_01"/>-->
-		    <!-- <class name="com.nopcommerce.login.Level_04_Register_Login_Page_Multi_Browser"/> -->  
-		    <!--<class name="com.nopcommerce.login.Level_05_Register_Page_Factory"/> -->
-		    <!-- <class name="com.nopcommerce.login.Level_06_Register_Login_Page_Generator_Manager"/> -->
-		   	<!--   <class name="com.nopcommerce.login.Level_07_Switch_Page_Object"/>-->
-		    <!--  <class name="com.nopcommerce.login.Level_08_Register_Login_Dynamic_Locator"/>-->
-		    <class name="com.nopcommerce.login.Level_13_Register_Login_ExtentReport"/>
+		    <class name="com.nopcomerce.common.Common_01_Login"/>
+		    <class name="com.nopcommerce.login.Level_14_Register_Login_Share_State"/>
+		    
     	</classes>
   	</test> 
   	
- 	<!-- 
-	 <test name="Run on Chrome">
-		<parameter name="browser" value="Chrome"/>	
-	    <classes>
-	      <class name="com.nopcommerce.login.Level_04_Register_Login_Page_Multi_Browser"/>  
-	      <class name="com.nopcommerce.login.Level_06_Register_Login_Page_Generator_Manager"/>     
-	    </classes>
-	  </test> 
- 
-	<test name="Run on Edge Chromium">
-		<parameter name="browser" value="Edge"/>	
-	    <classes>
-	      <class name="com.nopcommerce.login.Level_04_Register_Login_Page_Multi_Browser"/>
-	      <class name="com.nopcommerce.login.Level_06_Register_Login_Page_Generator_Manager"/>     
-	    </classes>
-	  </test> 
-	  -->
+ 	
 </suite> 
