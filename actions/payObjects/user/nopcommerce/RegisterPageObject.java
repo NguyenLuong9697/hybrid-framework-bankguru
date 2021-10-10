@@ -100,4 +100,10 @@ public class RegisterPageObject extends BasePage {
 		//return false;
 	}
 
+	
+
+	
+
+	
+
 }

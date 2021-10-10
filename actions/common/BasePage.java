@@ -513,6 +513,28 @@ public class BasePage {
 		
 		
 	}
+	
+	public void clickToHeaderLinkByLabelName(WebDriver driver, String headerLinkText) {
+		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_LINK_HEADER_BY_LABEL_NAME, headerLinkText);
+		clickToElement(driver, UserBasePageUI.DYNAMIC_LINK_HEADER_BY_LABEL_NAME, headerLinkText);
+		
+	}
+	
+	public void clickToRadioButtonByLabelName(WebDriver driver, String radiobuttonName) {
+		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_RADIOBUTTON_BY_LABEL_NAME, radiobuttonName);
+		clickToElement(driver, UserBasePageUI.DYNAMIC_RADIOBUTTON_BY_LABEL_NAME, radiobuttonName);
+	}
+	
+	public void enterToTextboxByID(WebDriver driver, String idTextbox, String value) {
+		waitForElementVisible(driver, UserBasePageUI.DYNAMIC_TEXTBOX_BY_ID, idTextbox);
+		sendKeyToElement(driver, UserBasePageUI.DYNAMIC_TEXTBOX_BY_ID, value,idTextbox );
+		
+	}
+	public void clickToButtonByLabelName(WebDriver driver, String buttonLabelName) {
+		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_BUTTON_BY_LABEL_NAME, buttonLabelName);
+		clickToElement(driver, UserBasePageUI.DYNAMIC_BUTTON_BY_LABEL_NAME, buttonLabelName);
+		
+	}
 	//Admin-NopCommerce
 	public void openSubMenuByName(WebDriver driver,String menuPageName, String submenuPageName) {
 		waitForElementClickable(driver,AdminBasePageUI.MENU_LINK_BY_NAME, menuPageName);
