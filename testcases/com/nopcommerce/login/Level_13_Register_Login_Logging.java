@@ -26,6 +26,7 @@ public class Level_13_Register_Login_Logging extends BaseTest {
  MyAccountPageObject myAccountPageObject;
  SearchPageObject searchPageObject;
  OrdersPageObject ordersPageObject;
+ 
   @BeforeClass
   @Parameters({ "browser", "url" })
   public void beforeClass(String browserName,String urlValue) {
